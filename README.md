@@ -50,6 +50,8 @@ var server = new PixlServer({
 
 Basically, anything nested more than one tab deep is collapsed to the left side.
 
+**UPDATE**: This appears to be a browser-specific issue.  Safari v9.0.2 seems to render the nested tabs correctly, while Chrome v47 and Firefox v43 do not.
+
 ## Tabs Are Rendered Extremely Wide
 
 Tabs in code snippets are rendered extremely wide on npmjs.com.  This here is one single tab:
