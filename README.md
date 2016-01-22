@@ -52,7 +52,7 @@ Basically, anything nested more than one tab deep is collapsed to the left side.
 
 ## Tabs Are Rendered Extremely Wide
 
-Tabs in code snippets are rendered with an extremely wide margins.  This here is one single tab:
+Tabs in code snippets are rendered extremely wide on npmjs.com.  This here is one single tab:
 
 ```js
 {
@@ -65,7 +65,7 @@ Because the npmjs.com page content is locked at 740px width, it would be highly 
 
 ## Incorrect Nested List Indents
 
-Nested lists don't seem to indent properly, when mixing numbered and bullet lists:
+Nested lists don't seem to indent properly, especially when mixing numbered and bullet lists:
 
 1. This is an outer list item.
 2. This is an outer list item.
