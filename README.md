@@ -89,7 +89,7 @@ Here is text below a list.  On npmjs.com this text is crammed up against the lis
 
 ## Tables Centered By Default
 
-Table columns should align left.  On npmjs.com they are all centered:
+Table content should align left unless explicitly set otherwise.  On npmjs.com it is all centered by default:
 
 | Header 1 | Header 2 | Header 3 |
 |----------|----------|----------|
@@ -97,3 +97,4 @@ Table columns should align left.  On npmjs.com they are all centered:
 | Sample 1 | Sample 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
 | Sample 1 | Sample 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
 
+Note: I am specifically referring to the table content, not the headers.
