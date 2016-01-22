@@ -65,23 +65,25 @@ Because the npmjs.com page content is locked at 740px width, it would be highly 
 
 ## Incorrect Nested List Indents
 
-Nested lists don't seem to indent properly, when using real tabs:
+Nested lists don't seem to indent properly, when mixing numbered and bullet lists:
 
-* This is an outer list item.
-* This is an outer list item.
-* This is an outer list item.
-	* This is nested one level deep.
-		* This is nested two levels deep.
-			* This is nested three levels deep.
-* This is an outer list item.
+1. This is an outer list item.
+2. This is an outer list item.
+3. This is an outer list item.
+	* This is a nested bullet list item.
+	* This is a nested bullet list item.
+	* This is a nested bullet list item.
 
 ## No Space After Lists
 
-Here is text above a list.
+Nested lists seem to have a spacing issue below them:
 
-* This is a list item.
-* This is a list item.
-* This is a list item.
+1. This is an outer list item.
+2. This is an outer list item.
+3. This is an outer list item.
+	* This is a nested bullet list item.
+	* This is a nested bullet list item.
+	* This is a nested bullet list item.
 
 Here is text below a list.  On npmjs.com this text is crammed up against the list bottom.
 
@@ -95,4 +97,3 @@ Table columns should align left.  On npmjs.com they are all centered:
 | Sample 1 | Sample 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
 | Sample 1 | Sample 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
 
-End.
