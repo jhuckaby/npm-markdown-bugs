@@ -101,7 +101,7 @@ Table content should align left unless explicitly set otherwise.  On npmjs.com i
 
 Note: I am specifically referring to the table content, not the headers.
 
-## Spaces are not preserved in text blocks
+## ASCII art is misaligned in text blocks
 
 The following is a simple ASCII box with text inside:
 
@@ -127,4 +127,4 @@ Both of these appear garbled on npmjs.com, with everything misaligned.  I believ
 
 Specifically, I believe the `─` character is being rendered double-width, and the `├` character is also misaligned.
 
-These boxes and tables appear fine on GitHub.com, and in various text editors and terminals I have used.
+These boxes and tables appear fine [on GitHub](https://github.com/jhuckaby/npm-markdown-bugs), and in various text editors and terminals I have used.
