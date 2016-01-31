@@ -100,3 +100,31 @@ Table content should align left unless explicitly set otherwise.  On npmjs.com i
 | Sample 1 | Sample 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
 
 Note: I am specifically referring to the table content, not the headers.
+
+## Spaces are not preserved in text blocks
+
+The following is a simple ASCII box with text inside:
+
+```
+┌───────────────────────────────────────────────┐
+│ The quick brown fox jumped over the lazy dog. │
+└───────────────────────────────────────────────┘
+```
+
+And this is an ASCII table with several rows and columns:
+
+```
+┌──────────┬────────────────┬───────────────────┬───────────────┐
+│ Username │ Full Name      │ Email Address     │ Status        │
+├──────────┼────────────────┼───────────────────┼───────────────┤
+│ jhuckaby │ Joseph Huckaby │ jhuckaby@test.com │ Administrator │
+│ tsmith   │ Tom Smith      │ smith@email.com   │ Active        │
+│ dcook    │ David Cook     │ dcook@hotmail.com │ Suspended     │
+└──────────┴────────────────┴───────────────────┴───────────────┘
+```
+
+Both of these appear garbled on npmjs.com, with everything misaligned.  I believe the font being used for text blocks is not truly monospace, and several of the ASCII art characters are actually double-width, when they should be single-width.
+
+Specifically, I believe the `─` character is being rendered double-width, and the `├` character is also misaligned.
+
+These boxes and tables appear fine on GitHub.com, and in various text editors and terminals I have used.
