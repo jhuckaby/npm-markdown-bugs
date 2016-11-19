@@ -128,3 +128,8 @@ Both of these appear garbled on npmjs.com, with everything misaligned.  I believ
 Specifically, I believe the `─` character is being rendered double-width, and the `├` character is also misaligned.
 
 These boxes and tables appear fine [on GitHub](https://github.com/jhuckaby/npm-markdown-bugs), and in various text editors and terminals I have tried.
+
+## Test
+
+Test.
+
