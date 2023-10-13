@@ -134,3 +134,7 @@ These boxes and tables appear fine [on GitHub](https://github.com/jhuckaby/npm-m
 Test.
 
 Test 2023-02-02.
+
+## Test Heading / With Slash
+
+Hello from 2023-10-12!
