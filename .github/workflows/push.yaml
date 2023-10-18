@@ -1,0 +1,19 @@
+name: ConfSync Push
+on: [push]
+
+env:
+  CONFSYNC_Storage__AWS__credentials__accessKeyId: ${{ secrets.AWSAccessKeyId }}
+  CONFSYNC_Storage__AWS__credentials__secretAccessKey: ${{ secrets.AWSSecretAccessKey }}
+  CONFSYNC_Storage__AWS__region: "us-west-1"
+  CONFSYNC_Storage__S3__keyPrefix: "confsync"
+  CONFSYNC_Storage__S3__params__Bucket: "jhuckaby-test"
+
+jobs:
+  confsync-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npx confsync push myapp myapp.json --message "$(git log -1 --pretty=%B | head -1)"

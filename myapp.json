@@ -1,0 +1,14 @@
+{
+	"logging": {
+		"debug_level": 9
+	},
+	"cache": {
+		"enabled": true,
+		"memory": "10 MB"
+	},
+	"features": {
+		"halloween_theme": true,
+		"new_layout": false,
+		"christmas_theme": false
+	}
+}
