@@ -9,6 +9,7 @@
 	"features": {
 		"halloween_theme": true,
 		"new_layout": false,
-		"christmas_theme": false
+		"christmas_theme": false,
+		"github_actions_party": true
 	}
 }
