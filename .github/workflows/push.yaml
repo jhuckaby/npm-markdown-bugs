@@ -16,4 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: npx confsync push myapp myapp.json --message "$(git log -1 --pretty=%B | head -1)"
+      - run: |
+          CONFSYNC_username=$(git log -1 --pretty=format:"%an")
+          CONFSYNC_message=$(git log -1 --pretty=%B | head -1)
+          npx confsync push myapp myapp.json --confirm
